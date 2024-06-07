@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "DM Sans", sans-serif;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center; 
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #1E0E62;
+    margin-bottom: 40px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    width: calc(33.333% - 100px);
+
+}
+
+
+.team-member img {
+    width: 170px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.team-member h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.role {
+    color: #25DAC5;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1rem;
+    color: #151439;
+    opacity: 0.4;
+}
+
+.cta-button {
+    background-color: #25DAC5;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #28a58c;
+}
+
+
+
+@media (max-width: 992px) {
+    body{
+        align-items: flex-start;
+    }
+    
+    .team-member {
+        width: calc(50% - 100px);
+    } 
+}
+
+@media (max-width: 768px) {
+    body{
+        align-items: flex-start;
+    }
+
+    .team-member {
+        width: calc(100% - 100px);
+    } 
+}
+
+@media (max-width: 480px) {
+    body{
+        align-items: flex-start;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .cta-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+} 
